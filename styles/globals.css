@@ -1,0 +1,112 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 1 999;
+  font-display: swap;
+  src: url(/assets/fonts/Rubik-VariableFont_wght.ttf)
+    format('truetype-variations');
+}
+@font-face {
+  font-family: 'Lato';
+  font-display: swap;
+  src: url(/assets/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+.firebaseui-idp-button,
+.firebaseui-tenant-button {
+  max-width: 190px !important;
+}
+
+body {
+  font-family: 'Rubik', Tahoma, sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', 'Rubik', Tahoma, sans-serif;
+}
+
+.bordergradient {
+  border: double 2px transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(#16151a, #16151a),
+    radial-gradient(circle at top left, #69eacb, #eaccf8, #6654f1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  min-width: 190px;
+  min-height: 55px;
+  /* border-image-slice: 1;
+	border-radius: 40px;
+	border-image-source: linear-gradient(to left, #69eacb, #eaccf8, #6654f1); */
+}
+
+.bg-gradient {
+  background-image: linear-gradient(
+    90deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+
+.bg-dark-gradient {
+  background-image: url(/assets/images/bg-dark-gradient.png);
+}
+
+.text-gradient {
+  background-image: linear-gradient(
+    90deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+
+.border-gradient {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    90deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+
+.bg-steel-button {
+  background-image: url(/assets/images/button-steel.jpg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #999;
+}
+
+p {
+  color: #999;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #2c2b2b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #16151a;
+  border-radius: 100vh;
+  border: 3px solid #16151a;
+}
